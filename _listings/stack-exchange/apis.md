@@ -9,106 +9,120 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-
 x-kinRank: "8"
 x-alexaRank: "126"
 tags: Questions
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Stack Exchange My Questions
-  x-api-slug: stack-exchange
+- name: Stack Exchange - My Questions
+  x-api-slug: mequestions-get
   description: "Returns the questions owned by the user associated with the given
     access_token.\n \nThis method returns a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//me/questions
-  tags: Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/mequestions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/mequestions-get-openapi.md
-- name: Stack Exchange My Questions Featured
-  x-api-slug: stack-exchange
+- name: Stack Exchange - My Questions Featured
+  x-api-slug: mequestionsfeatured-get
   description: "Returns the questions that have active bounties offered by the user
     associated with the given access_token.\n \nThis method returns a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//me/questions/featured
-  tags: Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/mequestionsfeatured-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/mequestionsfeatured-get-openapi.md
-- name: Stack Exchange My Questions No Answers
-  x-api-slug: stack-exchange
+- name: Stack Exchange - My Questions No Answers
+  x-api-slug: mequestionsnoanswers-get
   description: "Returns the questions owned by the user associated with the given
     access_token that have no answers.\n \nThis method returns a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//me/questions/no-answers
-  tags: Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/mequestionsnoanswers-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/mequestionsnoanswers-get-openapi.md
-- name: Stack Exchange My Questions Unaccepted
-  x-api-slug: stack-exchange
+- name: Stack Exchange - My Questions Unaccepted
+  x-api-slug: mequestionsunaccepted-get
   description: "Returns the questions owned by the user associated with the given
     access_token that have no accepted answer.\n \nThis method returns a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//me/questions/unaccepted
-  tags: Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/mequestionsunaccepted-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/mequestionsunaccepted-get-openapi.md
-- name: Stack Exchange My Questions Unanswered
-  x-api-slug: stack-exchange
+- name: Stack Exchange - My Questions Unanswered
+  x-api-slug: mequestionsunanswered-get
   description: "Returns the questions owned by the user associated with the given
     access_token that are not considered answered.\n \nThis method returns a list
     of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//me/questions/unanswered
-  tags: Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/mequestionsunanswered-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/mequestionsunanswered-get-openapi.md
-- name: Stack Exchange My Tags Top Questions
-  x-api-slug: stack-exchange
+- name: Stack Exchange - My Tags Top Questions
+  x-api-slug: metagstagstopquestions-get
   description: "Returns the top 30 questions the user associated with the given access_token
     has posted in response to questions with the given tags.\n \nThis method returns
     a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//me/tags/{tags}/top-questions
-  tags: Tags,Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/metagstagstopquestions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/metagstagstopquestions-get-openapi.md
-- name: Stack Exchange My Top Question Tags
-  x-api-slug: stack-exchange
+- name: Stack Exchange - My Top Question Tags
+  x-api-slug: metopquestiontags-get
   description: "Returns the user identified by access_token's top 30 tags by question
     score.\n \nThis method returns a list of top tag objects."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//me/top-question-tags
-  tags: Tags,Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/metopquestiontags-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/metopquestiontags-get-openapi.md
-- name: Stack Exchange Get Questions
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Questions
+  x-api-slug: questions-get
   description: "Gets all the questions on the site.\n \nThis method allows you make
     fairly flexible queries across the entire corpus of questions on a site. For example,
     getting all questions asked in the the week of Jan 1st 2011 with scores of 10
@@ -126,15 +140,17 @@ apis:
     and todate.\n \nThis method returns a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//questions
-  tags: Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questions-get-openapi.md
-- name: Stack Exchange Get Questions Featured
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Questions Featured
+  x-api-slug: questionsfeatured-get
   description: "Returns all the questions with active bounties in the system.\n \nThe
     sorts accepted by this method operate on the follow fields of the question object:\n
     - activity - last_activity_date\n - creation - creation_date\n - votes - score\n
@@ -143,15 +159,17 @@ apis:
     list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//questions/featured
-  tags: Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsfeatured-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsfeatured-get-openapi.md
-- name: Stack Exchange Get Questions No Answers
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Questions No Answers
+  x-api-slug: questionsnoanswers-get
   description: "Returns questions which have received no answers.\n \nCompare with
     /questions/unanswered which mearly returns questions that the sites consider insufficiently
     well answered.\n \nThis method corresponds roughly with the this site tab.\n \nTo
@@ -165,15 +183,17 @@ apis:
     and todate.\n \nThis method returns a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//questions/no-answers
-  tags: Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsnoanswers-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsnoanswers-get-openapi.md
-- name: Stack Exchange Get Questions Unanswered
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Questions Unanswered
+  x-api-slug: questionsunanswered-get
   description: "Returns questions the site considers to be unanswered.\n \nNote that
     just because a question has an answer, that does not mean it is considered answered.
     While the rules are subject to change, at this time a question must have at least
@@ -189,15 +209,17 @@ apis:
     and todate.\n \nThis method returns a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//questions/unanswered
-  tags: Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsunanswered-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsunanswered-get-openapi.md
-- name: Stack Exchange Get Questions
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Questions
+  x-api-slug: questionsids-get
   description: "Returns the questions identified in {ids}.\n \nThis is most useful
     for fetching fresh data when maintaining a cache of question ids, or polling for
     changes.\n \n{ids} can contain up to 100 semicolon delimited ids, to find ids
@@ -209,15 +231,17 @@ apis:
     questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//questions/{ids}
-  tags: Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsids-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsids-get-openapi.md
-- name: Stack Exchange Get Question Answers
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Question Answers
+  x-api-slug: questionsidsanswers-get
   description: "Gets the answers to a set of questions identified in id.\n \nThis
     method is most useful if you have a set of interesting questions, and you wish
     to obtain all of their answers at once or if you are polling for new or updates
@@ -230,15 +254,17 @@ apis:
     a list of answers."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//questions/{ids}/answers
-  tags: Questions,Answers
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsidsanswers-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsidsanswers-get-openapi.md
-- name: Stack Exchange Get Question Comments
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Question Comments
+  x-api-slug: questionsidscomments-get
   description: "Gets the comments on a question.\n \nIf you know that you have an
     question id and need the comments, use this method. If you know you have a answer
     id, use /answers/{ids}/comments. If you are unsure, use /posts/{ids}/comments.\n
@@ -250,15 +276,17 @@ apis:
     method returns a list of comments."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//questions/{ids}/comments
-  tags: Questions,Linked
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsidscomments-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsidscomments-get-openapi.md
-- name: Stack Exchange Get Question Linked
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Question Linked
+  x-api-slug: questionsidslinked-get
   description: "Gets questions which link to those questions identified in {ids}.\n
     \nThis method only considers questions that are linked within a site, and will
     never return questions from another Stack Exchange site.\n \nA question is considered
@@ -273,15 +301,17 @@ apis:
     method returns a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//questions/{ids}/linked
-  tags: Questions,Linked
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsidslinked-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsidslinked-get-openapi.md
-- name: Stack Exchange Get Question Related
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Question Related
+  x-api-slug: questionsidsrelated-get
   description: "Returns questions that the site considers related to those identified
     in {ids}.\n \nThe algorithm for determining if questions are related is not documented,
     and subject to change at any time. Futhermore, these values are very heavily cached,
@@ -298,15 +328,17 @@ apis:
     a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//questions/{ids}/related
-  tags: Questions,Related
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsidsrelated-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsidsrelated-get-openapi.md
-- name: Stack Exchange Get Question AnsweTimeliners
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Question AnsweTimeliners
+  x-api-slug: questionsidstimeline-get
   description: "Returns a subset of the events that have happened to the questions
     identified in id.\n \nThis provides data similar to that found on a question's
     timeline page.\n \nVoting data is scrubbed to deter inferencing of voter identity.\n
@@ -315,15 +347,17 @@ apis:
     timeline events."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//questions/{ids}/timeline
-  tags: Questions,Timeline
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsidstimeline-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/questionsidstimeline-get-openapi.md
-- name: Stack Exchange Get User Questions
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get User Questions
+  x-api-slug: usersidsquestions-get
   description: "Gets the questions asked by the users in {ids}.\n \n{ids} can contain
     up to 100 semicolon delimited ids, to find ids programatically look for user_id
     on user or shallow_user objects.\n \nThe sorts accepted by this method operate
@@ -333,15 +367,17 @@ apis:
     and todate.\n \nThis method returns a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//users/{ids}/questions
-  tags: Users,Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/usersidsquestions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/usersidsquestions-get-openapi.md
-- name: Stack Exchange Get User Tags Top Questions
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get User Tags Top Questions
+  x-api-slug: usersidtagstagstopquestions-get
   description: "Returns the top 30 questions a user has asked with the given tags.\n
     \n{id} can contain a single id, to find it programatically look for user_id on
     user or shallow_user objects. {tags} is limited to 5 tags, passing more will result
@@ -352,27 +388,20 @@ apis:
     method returns a list of questions."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//users/{id}/tags/{tags}/top-questions
-  tags: Users,Tags,Questions
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/usersidtagstagstopquestions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/usersidtagstagstopquestions-get-openapi.md
-- name: Stack Exchange
-  x-api-slug: stack-exchange
-  description: After someone asks a question, members of the community propose answers.
-    Others vote on those answers. Very quickly, the answers with the most votes rise
-    to the top. You dont have to read through a lot of discussion to find the best
-    answer.    Like to...
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
-  humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2
-  tags: Questions
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/stack-exchange/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://square.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://stack.exchange.stack.network
 - type: x-authentication
   url: https://api.stackexchange.com/docs/authentication
 - type: x-base

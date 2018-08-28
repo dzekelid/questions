@@ -7,78 +7,81 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventb
 x-kinRank: "9"
 x-alexaRank: "643"
 tags: Questions
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/eventbrite/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Eventbrite Get Events Canned Questions
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Events Canned Questions
+  x-api-slug: eventsidcanned-questions-get
   description: 'This endpoint returns canned questions of a single event (examples:
     first name, last name, company, prefix, etc.). This endpoint will return question.'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/canned_questions/
-  tags: Events,Canned,Questions
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/eventbrite/eventsidcanned-questions-get-openapi.md
-- name: Eventbrite Post Events Canned Questions
-  x-api-slug: eventbrite
+- name: Eventbrite - Post Events Canned Questions
+  x-api-slug: eventsidcanned-questions-post
   description: Creates a new canned question; returns the result as a question.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/canned_questions/
-  tags: Events,Canned,Questions
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/eventbrite/eventsidcanned-questions-post-openapi.md
-- name: Eventbrite Get Events Questions
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Events Questions
+  x-api-slug: eventsidquestions-get
   description: |-
     Eventbrite allows event organizers to add custom questions that attendees fill
     out upon registration. This endpoint can be helpful for determining what
     custom information is collected and available per event.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/questions/
-  tags: Events,Questions
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/eventbrite/eventsidquestions-get-openapi.md
-- name: Eventbrite Post Events Questions
-  x-api-slug: eventbrite
+- name: Eventbrite - Post Events Questions
+  x-api-slug: eventsidquestions-post
   description: Creates a new question; returns the result as a question as the key
     question.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/questions/
-  tags: Events,Questions
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/eventbrite/eventsidquestions-post-openapi.md
-- name: Eventbrite Get Events Questions
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Events Questions
+  x-api-slug: eventsidquestionsid-get
   description: This endpoint will return question for a specific question id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/questions/{id}/
-  tags: Events,Questions
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/eventbrite/eventsidquestionsid-get-openapi.md
-- name: Eventbrite
-  x-api-slug: eventbrite
-  description: Eventbrite brings people together through live experiences. Discover
-    events that match your passions, or create your own with online ticketing tools.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
-  humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
-  tags: Questions
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/questions/master/_listings/eventbrite/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://europeana.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://eventbrite.stack.network
 - type: x-apigee-console
   url: https://api.apigee.com/v1/consoles/eventbrite/apidescription?format=internal&ver=1351170233000
 - type: x-authentication

@@ -30,6 +30,43 @@ paths:
           description: OK
       tags:
       - Questions
+  /es/question/{pageName}{mediaTypeExtension}:
+    get:
+      summary: Get Es Question Pagename
+      description: Returns pages content.
+      operationId: getEsQuestionPagenameMediatypeextension
+      x-api-path-slug: esquestionpagenamemediatypeextension-get
+      parameters:
+      - in: path
+        name: mediaTypeExtension
+        description: Omiting the param causes html to be returned
+      - in: path
+        name: pageName
+      responses:
+        200:
+          description: OK
+      tags:
+      - Es
+      - Question
+      - Pagename
+  /question/{pageName}{mediaTypeExtension}:
+    get:
+      summary: Get Question Pagename
+      description: Returns pages content.
+      operationId: getQuestionPagenameMediatypeextension
+      x-api-path-slug: questionpagenamemediatypeextension-get
+      parameters:
+      - in: path
+        name: mediaTypeExtension
+        description: Omiting the param causes html to be returned
+      - in: path
+        name: pageName
+      responses:
+        200:
+          description: OK
+      tags:
+      - Question
+      - Pagename
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
